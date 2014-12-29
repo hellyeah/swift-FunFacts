@@ -9,12 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     @IBOutlet var funFactLabel: UILabel!
+    @IBOutlet var funFactButton: UIButton!
+    
+    let factBook = FactBook()
+    let colorWheel = ColorWheel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        funFactLabel.text = factBook.randomFact()
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +28,11 @@ class ViewController: UIViewController {
 
     @IBAction func showFunFact() {
         //println("You Pressed Me")
-        funFactLabel.text = "Another interesting fact"
+        var randomColor = colorWheel.randomColor()
+        //random number
+        funFactButton.tintColor = randomColor
+        view.backgroundColor = randomColor
+        funFactLabel.text = factBook.randomFact()
     }
 
 }
