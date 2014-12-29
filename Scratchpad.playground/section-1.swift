@@ -24,4 +24,4 @@ fruitsArray
 var optionalString: String? = "Hello"
 optionalString!
 
-
+//size classes on view makes it work on different screen sizes
