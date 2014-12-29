@@ -38,3 +38,6 @@ var randomNumber = Int(arc4random_uniform(10))
 var redColor = UIColor(red: 223/255.0, green: 86/255.0, blue: 94/255.0, alpha: 1.0)
 
 let colorsArray = [redColor]
+
+//Debugging
+//**Put exception breakpoint in your project when you start to help debug errors later on
